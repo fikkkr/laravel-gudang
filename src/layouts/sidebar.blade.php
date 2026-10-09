@@ -27,6 +27,7 @@
         ],
         [
             'label' => 'Laporan',
+            'adminOnly' => true,
             'items' => [
                 ['label' => 'Ringkasan Laporan', 'route' => 'reports.index', 'icon' => 'reports', 'active' => ['reports.index']],
                 ['label' => 'Laporan Stok', 'route' => 'reports.stock', 'icon' => 'stock', 'active' => ['reports.stock', 'reports.stocks', 'reports.stocks.export']],

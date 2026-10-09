@@ -90,11 +90,11 @@ Route::middleware(['auth', 'role:operator,admin'])->prefix('reports')->name('rep
     Route::get('/inbound', [ReportController::class, 'inbound'])->name('inbound');
     Route::get('/sales', [ReportController::class, 'sales'])->name('sales');
 
-    Route::get('/stocks', [ReportController::class, 'stocks'])->name('stocks');
-    Route::get('/stocks/export', [ReportController::class, 'exportStocks'])->name('stocks.export');
-    Route::get('/inbounds', [ReportController::class, 'inbounds'])->name('inbounds');
-    Route::get('/inbounds/export', [ReportController::class, 'exportInbounds'])->name('inbounds.export');
-    Route::get('/sales/export', [ReportController::class, 'exportSales'])->name('sales.export');
+    // Route::get('/stocks', [ReportController::class, 'stocks'])->name('stocks');
+    // Route::get('/stocks/export', [ReportController::class, 'exportStocks'])->name('stocks.export');
+    // Route::get('/inbounds', [ReportController::class, 'inbounds'])->name('inbounds');
+    // Route::get('/inbounds/export', [ReportController::class, 'exportInbounds'])->name('inbounds.export');
+    // Route::get('/sales/export', [ReportController::class, 'exportSales'])->name('sales.export');
 });
 
 Route::get('/dashboard', DashboardController::class)
